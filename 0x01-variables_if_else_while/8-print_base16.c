@@ -9,16 +9,16 @@ int main(void)
 {
 	char d = '0';
 	char c = 'a';
+	putchar(d);
+	putchar(c);
 
 	while (d <= '9')
 	{
-		putchar(d);
 		d++;
 	}
 
 	while (c <= 'f')
 	{
-		putchar(c);
 		c++;
 	}
 
