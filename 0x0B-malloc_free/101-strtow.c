@@ -2,14 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "holberton.h"
-
 /**
  * _strlen - find length of a string
  * @s: string
  * Return: int
  */
-
 
 int _strlen(char *s)
 {
@@ -24,9 +21,9 @@ return (size);
  * @s1: string 1
  * @s2: string 2
  * Return: pointer
- */
+*/
 
-char *str_addChar (char *str, char c)
+char *str_addChar(char *str, char c)
 {
 int size, i;
 char *m;
@@ -51,7 +48,7 @@ return (m);
  * *nbr_spaces - return the number of occurent of a string
  * @s: string to check
  * Return: int
- */
+*/
 
 unsigned int nbr_spaces(char *s)
 {
@@ -71,12 +68,13 @@ unsigned int nbr_spaces(char *s)
   *strtow - split a sentence into multiple words.
   *@str: the string passed as argument.
   *Return: tokens
-  */
+ */
+
 char **strtow(char *str)
 {
 int i;
 int spaces = nbr_spaces(str);
-char **tokens = NULL;//malloc(sizeof(char *) * (spaces));
+char **tokens = NULL;/*malloc(sizeof(char *) * (spaces));*/
 char *token;
 int checkingSpace = 0;
 int word = 0;
@@ -86,7 +84,6 @@ if (!tokens)
 	printf("Failed");
 	return (0);
 }
-	
 
 printf("looping");
 for (i = 0; str[i] != '\0'; i++)
